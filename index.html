@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="15x19" href="./favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Homescreen</title>
+</head>
+<body id="body"> 
+    <header id="main-menu" class="header">
+        <button class="burger-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+        <section class="burger-menu">
+            <section class="login-wrapper">
+                <h2>Login</h2>
+                <input placeholder="Username" type="text">
+                <input placeholder="Password" type="text">
+                <button>Sign in</button>
+            </section>
+            <section class="image-wrapper">
+                <h2>Discover</h2>
+                <form>
+                    <input id="img-search" placeholder="search" type="text">
+                    <button id="search-btn" type="submit">Search</button>
+                </form>
+                <ul id="search-results">
+
+                </ul>
+            </section>
+        </section>
+        <section class="weather-wrapper">
+
+        </section>
+    </header>
+    <main>
+        <section class="main-wrapper">
+            <h1 id="timeHolder" class="time"></h1>
+            <h2 id="dateHolder" class="date"></h2>
+        </section>
+        <section id="noteWrapper" class="note-wrapper">
+            <h2 class="activity">Today's activities:</h2>
+            <aside>
+                <input oninput="showHideSubmit()" id="noteInput" type="text">
+                <button onclick="addNote()">Add</button>
+            </aside>
+            <ul id="noteOutput" class="output">
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="quoteHolder" class="quote"></p>
+        <p id="authorHolder" class="quote"></p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./js/images.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/notes.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/timeAndDate.js"></script>
+</body>
+</html>
